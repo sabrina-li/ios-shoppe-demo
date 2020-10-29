@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
+variables:
+  system.debug: true
+
 steps:
 - script: /usr/local/bin/pod install --project-directory=swift
   displayName: 'pod install using a script'
@@ -22,4 +25,3 @@ steps:
     xcWorkspacePath: '**/*.xcodeproj'
     xcodeVersion: 'default'
     packageApp: true
-    system.debug: true
