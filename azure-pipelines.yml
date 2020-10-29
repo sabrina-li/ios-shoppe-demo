@@ -10,9 +10,12 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
-# CocoaPods
-# Install CocoaPods dependencies for Swift and Objective-C Cocoa projects
+- script: /usr/local/bin/pod install --project-directory=ios
+  displayName: 'pod install using a script'
+
 - task: CocoaPods@0
+  displayName: 'pod install using the CocoaPods task with defaults'
+
 - task: Xcode@5
   inputs:
     actions: 'build'
