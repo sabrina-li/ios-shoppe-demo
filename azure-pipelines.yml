@@ -24,4 +24,3 @@ steps:
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
     xcodeVersion: 'default'
-    packageApp: true
