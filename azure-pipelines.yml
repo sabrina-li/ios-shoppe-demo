@@ -19,7 +19,7 @@ steps:
 - task: Xcode@5
   inputs:
     actions: 'build'
-    scheme: ''
+    scheme: 'ios-shoppe-demo'
     sdk: 'iphoneos'
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
