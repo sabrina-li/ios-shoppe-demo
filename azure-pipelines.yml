@@ -10,11 +10,14 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
+# CocoaPods
+# Install CocoaPods dependencies for Swift and Objective-C Cocoa projects
+- task: CocoaPods@0
 - task: Xcode@5
   inputs:
     actions: 'build'
     scheme: 'ios-shoppe-demo'
     sdk: 'iphoneos'
-    configuration: 'Release'
+    configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj'
     xcodeVersion: 'default' # Options: 10
