@@ -22,6 +22,6 @@ steps:
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Debug'
-    xcWorkspacePath: '**/*.xcodeproj'
+    xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
     xcodeVersion: 'default'
     packageApp: true
