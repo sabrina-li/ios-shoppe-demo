@@ -10,7 +10,8 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
-- script: /usr/local/bin/pod install --project-directory=ios
+- script: /usr/local/bin/pod install --project-directory=ios-shoppe-demo
+/swift
   displayName: 'pod install using a script'
 
 - task: CocoaPods@0
