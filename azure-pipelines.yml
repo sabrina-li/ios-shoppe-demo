@@ -24,4 +24,3 @@ steps:
     xcodeVersion: 11
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
-    xcodeVersion: 'default'
