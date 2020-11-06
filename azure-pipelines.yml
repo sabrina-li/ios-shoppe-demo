@@ -24,4 +24,4 @@ steps:
     xcodeVersion: 11
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
-    
+    args: '-UseModernBuildSystem=0 -usePackageSupportBuiltinSCM'
