@@ -21,7 +21,7 @@
 	<key>FSOrgId</key>
 	<string>YOUR_ORG_HERE</string>
 	<key>FSVerboseLogging</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
