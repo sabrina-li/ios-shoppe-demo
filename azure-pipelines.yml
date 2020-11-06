@@ -25,3 +25,11 @@ steps:
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
     args: '-UseModernBuildSystem=0 -usePackageSupportBuiltinSCM'
+
+- task: CmdLine@2
+  inputs:
+    script: 'echo XCODEBUILD_LOG'
+    script: 'echo /Users/runner/work/_temp/xcodebuild.log'
+    
+
+    
