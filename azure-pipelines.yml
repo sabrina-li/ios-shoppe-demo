@@ -21,7 +21,7 @@ steps:
     actions: 'build'
     scheme: 'ios-shoppe-demo'
     sdk: 'iphoneos'
-    xcodeVersion: 11
+    xcodeVersion: 11.7
     configuration: 'Debug'
     xcWorkspacePath: '**/ios-shoppe-demo.xcworkspace'
     args: '-quiet'
