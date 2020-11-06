@@ -28,8 +28,11 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'echo XCODEBUILD_LOG'
-    script: 'echo /Users/runner/work/_temp/xcodebuild.log'
-    
+    script: 'less /Users/runner/work/_temp/xcodebuild.log'
+
+- task: CmdLine@2
+  inputs:
+    script: 'vi /Users/runner/work/_temp/xcodebuild.log'
+
 
     
