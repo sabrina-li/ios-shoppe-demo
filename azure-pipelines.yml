@@ -30,8 +30,7 @@ steps:
   inputs:
     script: |
       ls "/usr/bin" | grep "xcode\|lipo\|codesign"
-      ls /Users/runner/work/1/s/Pods/FullStory/tools
       /usr/bin/xcode-select
       /usr/bin/lipo
       /usr/bin/codesign
-      /Users/runner/work/1/s/Pods/FullStory/tools/FullStoryCommandLine.simulator
+      
