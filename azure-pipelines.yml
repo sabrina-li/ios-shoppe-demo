@@ -28,7 +28,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'less /Users/runner/work/_temp/xcodebuild.log'
+    script: 'ls "/usr/bin" | grep "xcode\|lipo\|codesign"'
 
 - task: CmdLine@2
   inputs:
