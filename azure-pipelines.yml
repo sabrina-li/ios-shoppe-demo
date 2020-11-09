@@ -29,10 +29,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: 'ls "/usr/bin" | grep "xcode\|lipo\|codesign"'
-
-- task: CmdLine@2
-  inputs:
-    script: 'vi /Users/runner/work/_temp/xcodebuild.log'
-
-
-    
+    script: '/usr/bin/xcode-select'
+    script: '/usr/bin/lipo'
+    script: '/usr/bin/codesign'
+    script: '/Users/runner/work/1/s/Pods/FullStory/tools/FullStoryCommandLine.simulator'
