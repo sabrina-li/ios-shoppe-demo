@@ -30,7 +30,4 @@ steps:
   inputs:
     script: |
       ls "/usr/bin" | grep "xcode\|lipo\|codesign"
-      /usr/bin/xcode-select
-      /usr/bin/lipo
-      /usr/bin/codesign
       

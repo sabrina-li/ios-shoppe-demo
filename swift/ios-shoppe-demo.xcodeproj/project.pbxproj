@@ -596,7 +596,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nls \"/usr/bin\" | grep 'xcode\\|lipo\\|codesign'\nls \"${PROJECT_DIR}/Pods/FullStory/tools/\"\n/usr/bin/xcode-select\n/usr/bin/lipo\n/usr/bin/codesign\n${PROJECT_DIR}/Pods/FullStory/tools/FullStoryCommandLine.simulator\n\necho \"=======\"\n\"${PROJECT_DIR}/Pods/FullStory/tools/FullStoryCommandLine\" \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\" > ~/Desktop/log.txt\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nls \"/usr/bin\" | grep 'xcode\\|lipo\\|codesign'\nls \"${PROJECT_DIR}/Pods/FullStory/tools/\"\nwhich xcode-select \nwhich lipo\nwhich codesign\n\necho \"=======\"\nusr/bin/xcode-select\nusr/bin/lipo\nusr/bin/codesign\n${PROJECT_DIR}/Pods/FullStory/tools/FullStoryCommandLine.simulator\n\necho \"=======\"\n\"${PROJECT_DIR}/Pods/FullStory/tools/FullStoryCommandLine\" \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
